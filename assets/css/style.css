@@ -1,0 +1,120 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Open+Sans:wght@400&display=swap');
+
+:root {
+    --color-cyan: #2AB3B1;
+    --color-bright-yellow: #C0DF33;
+    --color-light-gray: #cfe7f2;
+    --color-grayish-blue: #8b9baf;
+
+}
+
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--color-light-gray);
+}
+
+main {
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 635px;
+    width: 100%;
+}
+
+main .title {
+    background-color: white;
+    padding: 40px;
+}
+
+main .title h1 {
+    color: var(--color-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+    margin-bottom: 24px;
+}
+
+main .title h2 {
+    color: var(--color-bright-yellow);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.22px;
+    margin-bottom: 11px;
+
+}
+
+main .title p {
+    color: var(--color-grayish-blue);
+}
+
+
+main .details {
+    display: flex;
+}
+
+main .details .details_section {
+    width: 100%;
+    flex: 1;
+    padding: 40px;
+    background-color: #2AB3B1;
+    color: white;
+}
+
+main .details .details_section.right {
+    opacity: 0.75;
+}
+
+main .details .details_section h3 {
+    font-size: 18px;
+    letter-spacing: -0.22px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+main .details .details_section h4 {
+    font-size: 32px;
+    letter-spacing: -0.4px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+main .details .details_section h4 span {
+    opacity: 0.5;
+
+}
+
+main .details .details_section.left p {
+    margin-bottom: 26px;
+}
+
+main .details .details_section.left a {
+    background-color: var(--color-bright-yellow);
+    width: 100%;
+    border-radius: 5px;
+    padding: 14px 0px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+}
+
+main .details .details_section.right ul li {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.17px;
+}
+
+@media (max-width: 768px) {
+    main .details {
+        flex-direction: column;
+    }
+}
